@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_explanation
+  m_EditorClassIdentifier: 
+  _speaker: therapist
+  _lines:
+  - Of course!
+  - 'Today is intake, so we''re gonna start with a couple questions so I can get
+    to know you. '
+  - In your pre-appointment check-in you mentioned that you have some trouble knowing
+    what memories you have are real, and what are dreams.
+  - So this will set the scene for us both so when we take a closer look at your
+    recollections, we know what signs we can look for.
+  - Does that make sense?
+  _playerReplyOptions:
+  - Yes, I think so.
+  - No, can you repeat that?
+  _nextNodes:
+  - {fileID: 11400000, guid: e1285cbcec6655242b74017eb2a0ecca, type: 2}
+  - {fileID: 11400000}

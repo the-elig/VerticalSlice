@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_intake
+  m_EditorClassIdentifier: 
+  _speaker: therapist
+  _lines:
+  - Hi, Charlie. It's a pleasure to meet you.
+  - Is this your first time doing therapy?
+  _playerReplyOptions:
+  - Yeah. Can I get a rundown on what I should expect?
+  - No. I know we're gonna be doing intake and stuff today.
+  _nextNodes:
+  - {fileID: 11400000, guid: 81698d05db76b6e4b83bb24d7cd01588, type: 2}
+  - {fileID: 11400000, guid: e1285cbcec6655242b74017eb2a0ecca, type: 2}
