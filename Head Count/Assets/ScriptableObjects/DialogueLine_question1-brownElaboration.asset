@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueLine_question1-brownElaboration
   m_EditorClassIdentifier: 
   _speaker: player
-  _saveToJournal: 1
+  _saveToJournal: 0
   _lines:
   - Same as my dad's. Though my mom's are hazel.
   _playerReplyOptions: []

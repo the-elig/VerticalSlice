@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
+    [SerializeField] private Player _player;
     [SerializeField] private DialogueUI _dialogue;
     [SerializeField] private DialogueNode _dialogueStartNode;
 
@@ -65,6 +66,14 @@ public class DialogueController : MonoBehaviour
 
     public void SelectedOption(int option)
     {
+        if (_currentNode._saveToJournal)
+        {
+            // add fact to player facts if applicable
+            _player._facts.Add(_currentNode._playerReplyOptions[option]);
+        }
+        
+
+        // go to next node
         _currentLine = 0;
         _waitingForPlayerResponse = false;
 

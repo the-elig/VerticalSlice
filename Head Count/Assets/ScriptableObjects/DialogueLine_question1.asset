@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: DialogueLine_question1
   m_EditorClassIdentifier: 
   _speaker: therapist
+  _saveToJournal: 1
   _lines:
   - 'Wonderful. I''ll start with an easy question:'
   - What color are your eyes?
   _playerReplyOptions:
-  - Brown.
-  - Blue.
-  - Hazel.
+  - Brown
+  - Blue
+  - Hazel
   _nextNodes:
   - {fileID: 11400000, guid: d7d9603b5fc639941bd2f68687aa6d55, type: 2}
   - {fileID: 11400000, guid: 7824349ede3843040a13750220a365c0, type: 2}
