@@ -32,7 +32,7 @@ public class DialogueController : MonoBehaviour
         if (_currentLine < _currentNode._lines.Length)
         {
             // if we still have NPC lines left, keep playing NPC lines
-            _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
+            _dialogue.ShowDialogue(_currentNode._speaker, _currentNode._lines[_currentLine]);
             _currentLine++;
         }
         else if (_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
@@ -40,6 +40,12 @@ public class DialogueController : MonoBehaviour
             // show player dialogue options, if there are any
             _waitingForPlayerResponse = true;
             _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
+        }
+        else if (_currentNode._playerReplyOptions.Length == 0 && _currentNode._nextNodes.Length == 1)
+        {
+            // if there are no reply options, but the speaker switches, go to next node
+            Debug.Log("switch speaker triggered");
+            SelectedOption(0);
         }
         else
         {

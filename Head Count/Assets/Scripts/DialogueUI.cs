@@ -15,14 +15,25 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text _option2;
     [SerializeField] private TMP_Text _option3;
 
-    public void ShowDialogue(string dialogue)
+    public void ShowDialogue(string speaker, string dialogue)
     {
         _dialogueBox.SetActive(true);
 
         _npcText.enabled = true;
         _playerOptions.SetActive(false);
 
-        _npcText.text = dialogue;
+
+        // set text style depending on speaker
+        if (speaker == "player")
+        {
+            _npcText.fontStyle = FontStyles.Italic;
+        }
+        else
+        {
+            _npcText.fontStyle = FontStyles.Normal;
+        }
+
+            _npcText.text = dialogue;
     }
 
     // note: this only works for up to 3 dialogue options at a time currently
