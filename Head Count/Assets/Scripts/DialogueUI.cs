@@ -8,6 +8,10 @@ using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
+    // fonts
+    [SerializeField] private TMP_FontAsset _georgia;
+    [SerializeField] private TMP_FontAsset _studyNight;
+
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private TMP_Text _npcText;
     [SerializeField] private GameObject _playerOptions;
@@ -26,11 +30,11 @@ public class DialogueUI : MonoBehaviour
         // set text style depending on speaker
         if (speaker == "player")
         {
-            _npcText.fontStyle = FontStyles.Italic;
+            _npcText.font = _studyNight;
         }
         else
         {
-            _npcText.fontStyle = FontStyles.Normal;
+            _npcText.font = _georgia;
         }
 
             _npcText.text = dialogue;

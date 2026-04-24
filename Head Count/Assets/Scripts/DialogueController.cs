@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DialogueController : MonoBehaviour
@@ -20,7 +21,14 @@ public class DialogueController : MonoBehaviour
 
     private void Update()
     {
-        if (!_waitingForPlayerResponse && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
+        // clicking the journal doesn't forward dialogue
+        bool mouseClickable = (Input.mousePosition.x < 845 || Input.mousePosition.y < 500)
+            && !(bool)Variables.Scene(gameObject).Get("journalIsOpen");
+            
+            //.Get("journalIsOpen");
+
+        if (!_waitingForPlayerResponse && 
+            (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && mouseClickable)))
         {
             AdvanceDialogue();
         }
