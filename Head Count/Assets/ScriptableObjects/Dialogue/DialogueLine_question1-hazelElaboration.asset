@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: player
   _saveToJournal: 0
+  _recollection: {fileID: 0}
   _lines:
-  - Hazel. Same as my mom. My dad's are brown, though.
+  - Hazel. Though, my mom's are green and my dad's are brown.
   _playerReplyOptions: []
   _nextNodes:
   - {fileID: 11400000, guid: d82d9b324bedf0348acc5bffb0ce8ec4, type: 2}

@@ -24,9 +24,8 @@ public class DialogueController : MonoBehaviour
         // clicking the journal doesn't forward dialogue
         bool mouseClickable = (Input.mousePosition.x < 845 || Input.mousePosition.y < 500)
             && !(bool)Variables.Scene(gameObject).Get("journalIsOpen");
-            
-            //.Get("journalIsOpen");
-
+    
+        // forward dialouge when applicable
         if (!_waitingForPlayerResponse && 
             (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && mouseClickable)))
         {
@@ -74,10 +73,10 @@ public class DialogueController : MonoBehaviour
 
     public void SelectedOption(int option)
     {
-        if (_currentNode._saveToJournal)
+        if (_currentNode._recollection != null)
         {
             // add fact to player facts if applicable
-            _player._facts.Add(_currentNode._playerReplyOptions[option]);
+            _player.addFact(_currentNode._recollection, option);
         }
         
 

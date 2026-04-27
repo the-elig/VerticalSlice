@@ -1057,8 +1057,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Toggle Journal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ef6e4a935e1bc745b1f4b1695ae4a1c, type: 2}
+  m_sharedMaterial: {fileID: 4700028451866824963, guid: 1ef6e4a935e1bc745b1f4b1695ae4a1c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.75
+  m_fontSize: 18.95
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2022,6 +2022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753bcc5fbc8f1e74ca2225ecef028bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _journalText: {fileID: 1990171940}
   _santityMeter: 0
   _facts: []
 --- !u!114 &1138633585

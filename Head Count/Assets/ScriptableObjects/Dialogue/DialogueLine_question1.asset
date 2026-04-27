@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: therapist
   _saveToJournal: 1
+  _recollection: {fileID: 11400000, guid: f30d3b5abbb913347bdd71347bea4be9, type: 2}
   _lines:
   - 'Wonderful. I''ll start with an easy question:'
   - What color are your eyes?
