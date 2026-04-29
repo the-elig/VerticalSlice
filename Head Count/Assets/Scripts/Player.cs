@@ -26,8 +26,9 @@ public class Player : MonoBehaviour
 
     public void addFact(RecollectionNode fact, int selected)
     {
-        _facts.Add(fact._title + ": " + fact._possibleDescriptions[selected]);
-
+        _facts.Add(fact._title + ": " + fact._possibleDescriptions[selected]); // add title and proper description to list
+        
+        _journalText.text = ""; // clear text
         foreach (string s in _facts)
         {
             Debug.Log(s);
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour
             string header = s.Substring(0, s.IndexOf(": "));
             string description = s.Substring(s.IndexOf(": ") + 1);
 
-            _journalText.text = $"<b>{header}</b>\n{description}";
+            _journalText.text += $"<b>{header}</b>\n{description}\n\n"; // put header and description into journal
         }
     }
 }
