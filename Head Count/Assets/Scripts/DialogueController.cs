@@ -30,6 +30,7 @@ public class DialogueController : MonoBehaviour
             (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && mouseClickable)))
         {
             AdvanceDialogue();
+            _player.checkForSceneChange(_currentNode);
         }
     }
 
@@ -76,7 +77,10 @@ public class DialogueController : MonoBehaviour
         if (_currentNode._recollection != null)
         {
             // add fact to player facts if applicable
-            _player.addFact(_currentNode._recollection, option);
+            if (_currentNode._isFact)
+                _player.addFact(_currentNode._recollection, option);
+            else
+                _player.addRecollection(_currentNode._recollection, option);
         }
         
 

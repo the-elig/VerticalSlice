@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_sort
+  m_EditorClassIdentifier: 
+  _speaker: therapist
+  _scene: 0
+  _isFact: 0
+  _recollection: {fileID: 11400000, guid: 3c549d24b92441e43b5ad4500311a8a7, type: 2}
+  _lines:
+  - Do you think it was real?
+  _playerReplyOptions:
+  - Memory.
+  - Dream.
+  _nextNodes:
+  - {fileID: 11400000, guid: a07b07644492f1a46ad419816386b944, type: 2}

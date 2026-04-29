@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_question3
+  m_EditorClassIdentifier: 
+  _speaker: therapist
+  _scene: 0
+  _recollection: {fileID: 0}
+  _lines:
+  - That's very mature of you.
+  - 'If you don''t mind me asking, what pronouns do you use? '
+  - Here there will be more questions before getting into the next scene, but that
+    will be implemented later.
+  - We will go to our first recollection now.
+  _playerReplyOptions:
+  - okay
+  _nextNodes:
+  - {fileID: 11400000, guid: 722eaf46f9b9c70498ecbc460889bab9, type: 2}

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_question3
+  m_Name: DialogueLine-exposition-hands
   m_EditorClassIdentifier: 
-  _speaker: therapist
-  _saveToJournal: 0
+  _speaker: player
+  _scene: 0
+  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
-  - That's very mature of you.
-  - 'If you don''t mind me asking, what pronouns do you use? '
+  - 'My hands are shaking. '
   _playerReplyOptions: []
-  _nextNodes: []
+  _nextNodes:
+  - {fileID: 11400000, guid: 5c20533d12af0fb4d8d1ac08ba9d3811, type: 2}

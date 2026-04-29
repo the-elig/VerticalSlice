@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: DialogueLine_question2
   m_EditorClassIdentifier: 
   _speaker: therapist
-  _saveToJournal: 0
+  _scene: 0
+  _isFact: 1
   _recollection: {fileID: 11400000, guid: 2d4d3745a2df0a44db2b02560924602c, type: 2}
   _lines:
   - Wonderful.

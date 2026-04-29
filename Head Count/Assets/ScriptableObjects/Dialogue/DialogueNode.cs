@@ -6,8 +6,11 @@ public class DialogueNode : ScriptableObject
     // who is saying this line?
     public string _speaker;
 
+    //what scene does the node take place in?
+    public int _scene;
+
     // is this information being saved to the Journal, and what information is being saved
-    public bool _saveToJournal;
+    public bool _isFact;
     public RecollectionNode _recollection;
 
     // the lines of dialogue the NPC says for this node
