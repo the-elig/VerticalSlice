@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: therapist
   _saveToJournal: 0
+  _recollection: {fileID: 11400000, guid: 2d4d3745a2df0a44db2b02560924602c, type: 2}
   _lines:
-  - Great.
-  - Another question will go here.
-  _playerReplyOptions: []
-  _nextNodes: []
+  - Wonderful.
+  - How would you describe your relationship with your parents?
+  _playerReplyOptions:
+  - Overall? Good.
+  - It's not great.
+  - It's... complicated.
+  _nextNodes:
+  - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}
+  - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}
+  - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}

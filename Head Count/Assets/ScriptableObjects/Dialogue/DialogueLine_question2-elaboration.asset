@@ -12,9 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
   m_Name: DialogueLine_question2-elaboration
   m_EditorClassIdentifier: 
-  _speaker: 
+  _speaker: player
   _saveToJournal: 0
   _recollection: {fileID: 0}
-  _lines: []
+  _lines:
+  - 'I know they tried their best. '
+  - To be honest, I probably wouldn't have done much better if I were in their shoes,
+    but-
+  - It's hard not to think that if they could've handled everything differently,
+    things could be better.
+  - I mean- things wouldn't be so messed up, at least.
+  - But, aside from how they handled my sister, they've always been supportive.
+  - When I came out as trans they were a bit... unsure, at first, but they respected
+    me and loved me.
+  - Which- bare minimum, I know. But it's worth saying.
+  - And we've talked about it. Now that we aren't actively in crisis, you know?
+  - 'We''re not perfect. '
   _playerReplyOptions: []
-  _nextNodes: []
+  _nextNodes:
+  - {fileID: 11400000, guid: e258a6f79c199f6488b0f7da41354b55, type: 2}

@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb764cfe490ddf4dbf71d42a4f76ce4, type: 3}
   m_Name: parentRelationship
   m_EditorClassIdentifier: 
-  _title: 
-  _possibleDescriptions: []
+  _title: Relationship With Parents
+  _possibleDescriptions:
+  - Good. We've had our disagreements, but we've talked about it and I know where
+    they were coming from.
+  - Not great. I didn't like how they handled things with my little sister.
+  - It's complicated. I know why they did what they did, but that doesn't excuse
+    it. They still hurt us.
   _real: 0
