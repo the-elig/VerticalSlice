@@ -7,11 +7,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private TMP_Text _factText;
     [SerializeField] private TMP_Text _recollectionText;
+    [SerializeField] private TMP_Text _sanityMeterText;
 
     [SerializeField] private Camera _camera;
 
 
-public float _santityMeter;
+public float _sanityMeter;
 
     //journal stuff
     public List<string> _facts;
@@ -27,12 +28,18 @@ public float _santityMeter;
     void Start()
     {
         currentScene = 1;
+        _sanityMeter = 75;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (_sanityMeter > 100)
+        {
+            _sanityMeter = 100;
+        }
+
+        _sanityMeterText.text = _sanityMeter.ToString();
     }
 
     public void checkForSceneChange(DialogueNode node)
@@ -67,6 +74,8 @@ public float _santityMeter;
 
             _factText.text += $"<b>{header}</b>\n{description}\n\n"; // put header and description into journal
         }
+
+        modifySanity(fact, 0); //always selects true
     }
 
 
@@ -86,5 +95,28 @@ public float _santityMeter;
 
             // later i will implement instantiating prefabs for the journal but not yet
         }
+
+        modifySanity(recollection, selected);
+    }
+
+
+    private void modifySanity(RecollectionNode recollection, int selected)
+    {
+        int correctSorting = recollection._real ? 0: 1; // real = 0 because of indexing reasons
+
+        Debug.Log("correct sorting = " + correctSorting + ", selected = " + selected);
+
+        if (selected == correctSorting) 
+        {
+            _sanityMeter += recollection.sanityScore;
+        }
+        else
+        {
+            _sanityMeter -= recollection.sanityScore;
+        }
+
+        Debug.Log(_sanityMeter);
+
+
     }
 }
