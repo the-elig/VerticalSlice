@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: DialogueLine_explanation
   m_EditorClassIdentifier: 
   _speaker: therapist
+  _scene: 0
+  _isFact: 0
+  _recollection: {fileID: 0}
   _lines:
   - Of course!
   - 'Today is intake, so we''re gonna start with a couple questions so I can get
@@ -21,6 +24,8 @@ MonoBehaviour:
     what memories you have are real, and what are dreams.
   - So this will set the scene for us both so when we take a closer look at your
     recollections, we know what signs we can look for.
+  - If you forget anything you've said, you can always check your journal if you
+    need.
   - Does that make sense?
   _playerReplyOptions:
   - Yes, I think so.
