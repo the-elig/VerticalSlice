@@ -76,11 +76,7 @@ public class DialogueController : MonoBehaviour
     {
         if (_currentNode._recollection != null) // if there is a recollection attached to the dialogue
         {
-            // add fact to player facts if applicable
-            //if (_currentNode._isFact)
-                //_player.addFact(_currentNode._recollection, option);
-            //else
-                _player.addRecollection(_currentNode._recollection, option);
+            _player.addRecollection(_currentNode._recollection, option);
         }
         
 

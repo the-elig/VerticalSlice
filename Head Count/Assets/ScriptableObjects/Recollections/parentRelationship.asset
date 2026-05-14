@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: Relationship With Parents
   _possibleDescriptions:
-  - Good. We've had our disagreements, but we've talked about it and I know where
-    they were coming from.
+  - Good. We've had our disagreements, but we've talked about it since.
   - Not great. I didn't like how they handled things with my little sister.
   - It's complicated. I know why they did what they did, but that doesn't excuse
     it. They still hurt us.

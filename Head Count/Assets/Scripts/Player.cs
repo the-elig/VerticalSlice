@@ -1,37 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _factText;
-    [SerializeField] private TMP_Text _recollectionText;
+    //[SerializeField] private TMP_Text _recollectionText;
+
+
+    //sanity stuff
     [SerializeField] private TMP_Text _sanityMeterText;
+    public float _sanityMeter;
 
-    [SerializeField] private Camera _camera;
-
-
-public float _sanityMeter;
 
     //journal stuff
-    public List<string> _facts;
-    public List<string> _recollections;
+    [SerializeField] private GameObject _parent;
+    [SerializeField] private GameObject _journalPagePrefab;
+    private AotList _journalPages;
+    private int numPages = 0;
+    private GameObject currentPage;
+    public List<string> _recollections; // two per leaf, four per page
 
 
     //scene switching
+    [SerializeField] private Camera _camera;
     [SerializeField] public Camera[] _cameraPositions; //puts camera in different scenes
     public int currentScene; //0 means no change, 1 is therapist's office
 
 
-    // Start is called before the first frame update
     void Start()
     {
         currentScene = 1;
         _sanityMeter = 75;
+
+        _journalPages = (AotList)Variables.Object(gameObject).Get("journalPages");
+        currentPage = (GameObject)_journalPages[0];
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (_sanityMeter > 100)
@@ -40,6 +46,10 @@ public float _sanityMeter;
         }
 
         _sanityMeterText.text = _sanityMeter.ToString();
+
+
+
+        
     }
 
     public void checkForSceneChange(DialogueNode node)
@@ -56,44 +66,51 @@ public float _sanityMeter;
             currentScene = node._scene;
             _cameraPositions[currentScene].tag = "MainCamera";
             _cameraPositions[currentScene].gameObject.SetActive(true);
-
         }
-    }
-
-    public void addFact(RecollectionNode fact, int selected)
-    {
-        _facts.Add(fact._title + ": " + fact._possibleDescriptions[selected]); // add title and proper description to list
-        
-        _factText.text = ""; // clear text
-        foreach (string s in _facts)
-        {
-            Debug.Log(s);
-
-            string header = s.Substring(0, s.IndexOf(": "));
-            string description = s.Substring(s.IndexOf(": ") + 1);
-
-            _factText.text += $"<b>{header}</b>\n{description}\n\n"; // put header and description into journal
-        }
-
-        modifySanity(fact, 0); //always selects true
     }
 
 
     public void addRecollection(RecollectionNode recollection, int selected)
     {
-        _recollections.Add(recollection._title + ": " + recollection._possibleDescriptions[selected]); // add title and proper description to list
+        // add title and proper description to list
+        _recollections.Add(recollection._title + ": " + recollection._possibleDescriptions[selected]);
 
-        _recollectionText.text = ""; // clear text
-        foreach (string s in _recollections)
+        string header =
+                _recollections[_recollections.Count - 1].Substring(0, _recollections[_recollections.Count - 1].IndexOf(": "));
+        string description =
+            _recollections[_recollections.Count - 1].Substring(_recollections[_recollections.Count - 1].IndexOf(": ") + 1);
+
+
+
+        // if we've filled current page
+        if (numPages * 2 == _recollections.Count - 5)
         {
-            Debug.Log(s);
+            // instantiate new page
+            GameObject newPage = Instantiate(_journalPagePrefab, _parent.transform);
+            newPage.GetComponentInChildren<TMP_Text>().text = "";
+            numPages++;
 
-            string header = s.Substring(0, s.IndexOf(": "));
-            string description = s.Substring(s.IndexOf(": ") + 1);
+            // put header and description into journal
+            newPage.GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";            
 
-            _recollectionText.text += $"<b>{header}</b>\n{description}\n\n"; // put header and description into journal
-
-            // later i will implement instantiating prefabs for the journal but not yet
+            // update UI Controller
+            _journalPages.Add(newPage);
+            Variables.Object(gameObject).Set("journalPages", _journalPages);
+            currentPage = newPage;
+            newPage.SetActive(false);
+        }
+        else // if we're continuing on the same page
+        {
+            if ((_recollections.Count - 2) % 4 == 1 || (_recollections.Count - 2) % 4 == 2)
+            {
+                // right leaf
+                currentPage.transform.GetChild(1).GetComponent<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+            }
+            else
+            {
+                // left leaf
+                currentPage.transform.GetChild(0).GetComponent<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+            }
         }
 
 
@@ -127,4 +144,27 @@ public float _sanityMeter;
 
 
     }
+
+
+
+
+    /*
+    public void addFact(RecollectionNode fact, int selected)
+    {
+        _facts.Add(fact._title + ": " + fact._possibleDescriptions[selected]); // add title and proper description to list
+        
+        _factText.text = ""; // clear text
+        foreach (string s in _facts)
+        {
+            Debug.Log(s);
+
+            string header = s.Substring(0, s.IndexOf(": "));
+            string description = s.Substring(s.IndexOf(": ") + 1);
+
+            _factText.text += $"<b>{header}</b>\n{description}\n\n"; // put header and description into journal
+        }
+
+        modifySanity(fact, 0); //always selects true
+    }
+    */
 }
