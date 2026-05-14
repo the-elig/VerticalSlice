@@ -44,7 +44,7 @@ public float _sanityMeter;
 
     public void checkForSceneChange(DialogueNode node)
     {
-        Debug.Log("old scene = " + currentScene + ", current = " + node._scene);
+        // Debug.Log("old scene = " + currentScene + ", current = " + node._scene);
 
         if (!(node._scene == 0 || node._scene == currentScene)) // if scene changes
         {
@@ -96,7 +96,15 @@ public float _sanityMeter;
             // later i will implement instantiating prefabs for the journal but not yet
         }
 
-        modifySanity(recollection, selected);
+
+        if (recollection._isAlwaysCorrect)
+        {
+            modifySanity(recollection, 0);
+        }
+        else
+        {
+            modifySanity(recollection, selected);
+        }
     }
 
 
@@ -108,11 +116,11 @@ public float _sanityMeter;
 
         if (selected == correctSorting) 
         {
-            _sanityMeter += recollection.sanityScore;
+            _sanityMeter += recollection._sanityScore;
         }
         else
         {
-            _sanityMeter -= recollection.sanityScore;
+            _sanityMeter -= recollection._sanityScore;
         }
 
         Debug.Log(_sanityMeter);

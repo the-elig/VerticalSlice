@@ -19,5 +19,6 @@ MonoBehaviour:
   - Not great. I didn't like how they handled things with my little sister.
   - It's complicated. I know why they did what they did, but that doesn't excuse
     it. They still hurt us.
-  sanityScore: 5
+  _sanityScore: 5
+  _isAlwaysCorrect: 1
   _real: 1

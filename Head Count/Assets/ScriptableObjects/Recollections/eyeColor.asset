@@ -17,5 +17,6 @@ MonoBehaviour:
   - Mine are brown, same as my dad. My mom's are hazel.
   - Blue. Same as both my parents.
   - My eyes are hazel. My mom's are green and by dad's are brown.
-  sanityScore: 5
+  _sanityScore: 5
+  _isAlwaysCorrect: 1
   _real: 1
