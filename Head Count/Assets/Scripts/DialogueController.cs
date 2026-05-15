@@ -14,21 +14,23 @@ public class DialogueController : MonoBehaviour
     private int _currentLine = 0;
     private bool _runningDialogue;
     private bool _waitingForPlayerResponse;
+    public bool _mouseClickable;
 
     private void Start()
     {
         _currentNode = _dialogueStartNode;
+        _mouseClickable = true;
     }
 
     private void Update()
     {
         // clicking the journal doesn't forward dialogue
-        bool mouseClickable = (Input.mousePosition.x < 845 || Input.mousePosition.y < 500)
-            && !(bool)Variables.Scene(gameObject).Get("journalIsOpen");
+        //bool mouseClickable = (Input.mousePosition.x < 845 || Input.mousePosition.y < 500)
+        //    && !(bool)Variables.Scene(gameObject).Get("journalIsOpen");
     
         // forward dialouge when applicable
         if (!_waitingForPlayerResponse && 
-            (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && mouseClickable)))
+            (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && _mouseClickable)))
         {
             AdvanceDialogue();
             _player.checkForSceneChange(_currentNode);
@@ -87,6 +89,11 @@ public class DialogueController : MonoBehaviour
 
         _currentNode = _currentNode._nextNodes[option];
         AdvanceDialogue();
+    }
+
+    public void setMouseClickable(bool b)
+    {
+        _mouseClickable = b;
     }
 }
 
