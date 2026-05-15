@@ -24,10 +24,6 @@ public class DialogueController : MonoBehaviour
 
     private void Update()
     {
-        // clicking the journal doesn't forward dialogue
-        //bool mouseClickable = (Input.mousePosition.x < 845 || Input.mousePosition.y < 500)
-        //    && !(bool)Variables.Scene(gameObject).Get("journalIsOpen");
-    
         // forward dialouge when applicable
         if (!_waitingForPlayerResponse && 
             (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && _mouseClickable)))
