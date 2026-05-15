@@ -29,6 +29,9 @@ public class Player : MonoBehaviour
     public int currentScene; //0 means no change, 1 is therapist's office
 
 
+    // win/lose condition logic
+    [SerializeField] private GameObject _loseScreen;
+
     void Start()
     {
         currentScene = 1;
@@ -49,7 +52,10 @@ public class Player : MonoBehaviour
 
 
 
-        
+        if (_sanityMeter < 50) // 50 is arbitrary
+        {
+            playerLose();
+        }
     }
 
     public void checkForSceneChange(DialogueNode node)
@@ -145,26 +151,9 @@ public class Player : MonoBehaviour
 
     }
 
-
-
-
-    /*
-    public void addFact(RecollectionNode fact, int selected)
+    
+    private void playerLose()
     {
-        _facts.Add(fact._title + ": " + fact._possibleDescriptions[selected]); // add title and proper description to list
-        
-        _factText.text = ""; // clear text
-        foreach (string s in _facts)
-        {
-            Debug.Log(s);
-
-            string header = s.Substring(0, s.IndexOf(": "));
-            string description = s.Substring(s.IndexOf(": ") + 1);
-
-            _factText.text += $"<b>{header}</b>\n{description}\n\n"; // put header and description into journal
-        }
-
-        modifySanity(fact, 0); //always selects true
+        _loseScreen.SetActive(true);
     }
-    */
 }

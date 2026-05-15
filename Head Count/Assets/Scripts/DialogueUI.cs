@@ -12,7 +12,10 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_FontAsset _georgia;
     [SerializeField] private TMP_FontAsset _studyNight;
 
+
+    // ui elements
     [SerializeField] private GameObject _dialogueBox;
+    [SerializeField] private TMP_Text _speakerName;
     [SerializeField] private TMP_Text _npcText;
     [SerializeField] private GameObject _playerOptions;
     [SerializeField] private TMP_Text _option1;
@@ -28,7 +31,7 @@ public class DialogueUI : MonoBehaviour
 
 
         // set text style depending on speaker
-        if (speaker == "player")
+        if (speaker == "You")
         {
             _npcText.font = _studyNight;
         }
@@ -37,7 +40,9 @@ public class DialogueUI : MonoBehaviour
             _npcText.font = _georgia;
         }
 
-            _npcText.text = dialogue;
+
+        _speakerName.text = speaker;
+        _npcText.text = dialogue;
     }
 
     // note: this only works for up to 3 dialogue options at a time currently
@@ -48,6 +53,7 @@ public class DialogueUI : MonoBehaviour
 
         _npcText.enabled = false;
         _playerOptions.SetActive(true);
+        _speakerName.text = "You";
 
         _option1.text = options[0];
 

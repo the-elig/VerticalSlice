@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
   m_Name: DialogueLine_question1-brownElaboration
   m_EditorClassIdentifier: 
-  _speaker: player
-  _saveToJournal: 0
+  _speaker: You
+  _scene: 0
+  _isFact: 0
+  _recollection: {fileID: 0}
   _lines:
   - Brown. Same as my dad's. Though my mom's are hazel.
   _playerReplyOptions: []

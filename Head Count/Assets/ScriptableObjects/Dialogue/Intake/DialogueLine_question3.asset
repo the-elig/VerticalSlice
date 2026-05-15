@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
   m_Name: DialogueLine_question3
   m_EditorClassIdentifier: 
-  _speaker: therapist
+  _speaker: Therapist
   _scene: 0
+  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
   - That's very mature of you.

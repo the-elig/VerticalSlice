@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
   m_Name: DialogueLine_sort
   m_EditorClassIdentifier: 
-  _speaker: therapist
+  _speaker: Therapist
   _scene: 0
   _isFact: 0
   _recollection: {fileID: 11400000, guid: 3c549d24b92441e43b5ad4500311a8a7, type: 2}
