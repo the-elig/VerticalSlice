@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
 
 
         // if we've filled current page
-        if (numPages * 2 == _recollections.Count - 5)
+        if (_recollections.Count > 4 && _recollections.Count % 4 == 1)
         {
             // instantiate new page
             GameObject newPage = Instantiate(_journalPagePrefab, _parent.transform);
