@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdb764cfe490ddf4dbf71d42a4f76ce4, type: 3}
-  m_Name: eyeColor
+  m_Name: gender
   m_EditorClassIdentifier: 
-  _title: Eye Color
+  _title: Gender
   _possibleDescriptions:
-  - Mine are brown, same as my dad. My mom's are hazel.
-  - Blue. Same as both my parents.
-  - My eyes are hazel. My mom's are green and by dad's are brown.
+  - Trans girl. Realized in freshman year, came out to friends in junior, and to
+    parents in senior year
+  - Trans boy. Realized in freshman year, came out to friends in junior, and to parents
+    in senior year
+  - Non-binary. Realized in freshman year, came out to friends in junior, and to
+    parents in senior year
   _sanityScore: 3
   _isAlwaysCorrect: 1
   _real: 1

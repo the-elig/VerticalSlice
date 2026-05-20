@@ -10,7 +10,6 @@ public class DialogueNode : ScriptableObject
     public int _scene;
 
     // is this information being saved to the Journal, and what information is being saved
-    public bool _isFact;
     public RecollectionNode _recollection;
 
     // the lines of dialogue the NPC says for this node

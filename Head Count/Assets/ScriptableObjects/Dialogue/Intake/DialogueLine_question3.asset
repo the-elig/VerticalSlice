@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
-  _isFact: 0
-  _recollection: {fileID: 0}
+  _recollection: {fileID: 11400000, guid: d1de0bd15e598e1448ebc499beacd807, type: 2}
   _lines:
   - That's very mature of you.
   - 'If you don''t mind me asking, what pronouns do you use? '
-  - Here there will be more questions before getting into the next scene, but that
-    will be implemented later.
-  - We will go to our first recollection now.
   _playerReplyOptions:
-  - okay
+  - She/Her
+  - He/Him
+  - They/Them
   _nextNodes:
-  - {fileID: 11400000, guid: 722eaf46f9b9c70498ecbc460889bab9, type: 2}
+  - {fileID: 11400000, guid: 9aadfb82176499847b40fe60d2d6c6a5, type: 2}
+  - {fileID: 11400000, guid: 9aadfb82176499847b40fe60d2d6c6a5, type: 2}
+  - {fileID: 11400000, guid: 9aadfb82176499847b40fe60d2d6c6a5, type: 2}
