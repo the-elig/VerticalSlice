@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdb764cfe490ddf4dbf71d42a4f76ce4, type: 3}
-  m_Name: bedroom
+  m_Name: school
   m_EditorClassIdentifier: 
-  _title: In My Bedroom
+  _title: Lost at School
   _possibleDescriptions:
-  - There was fighting in the house. Things were thrown, sometimes. I zoned out in
-    my room.
-  - A dream where my parents fought.
+  - I couldn't find my classroom and I was late and my friend and I felt so helpless.
+  - A dream centered around being unable to find my classroom.
   _sanityScore: 5
   _isAlwaysCorrect: 0
-  _real: 1
+  _real: 0

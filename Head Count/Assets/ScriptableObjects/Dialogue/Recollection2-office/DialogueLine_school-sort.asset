@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_sort
+  m_Name: DialogueLine_school-sort
   m_EditorClassIdentifier: 
   _speaker: Therapist
-  _scene: 0
-  _recollection: {fileID: 11400000, guid: 3c549d24b92441e43b5ad4500311a8a7, type: 2}
+  _scene: 1
+  _recollection: {fileID: 11400000, guid: f0b47c58ed6959f46b888c133cb2165c, type: 2}
   _lines:
-  - Do you think it was real?
+  - Do you think that was a dream of a memory?
   _playerReplyOptions:
   - Memory.
   - Dream.
   _nextNodes:
-  - {fileID: 11400000, guid: cde39f18ccc47674d9cbe4395e7ae3c0, type: 2}
-  - {fileID: 11400000, guid: f8f65616486182d43bb4f9827c9ed8d0, type: 2}
+  - {fileID: 11400000, guid: f648091367ebd3541a426def3e099613, type: 2}
+  - {fileID: 11400000, guid: 1b7c42b201ca3504286bcdbe34c44125, type: 2}

@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_intro
+  m_Name: DialogueLine_school-ending
   m_EditorClassIdentifier: 
-  _speaker: Therapist
-  _scene: 0
-  _isFact: 0
+  _speaker: You
+  _scene: 1
   _recollection: {fileID: 0}
   _lines:
-  - Alright. Would you like to tell me about this first recollection of yours?
-  _playerReplyOptions:
-  - Okay.
+  - 'Eventually I make it into a classroom. '
+  - I'm late, but only by a couple minutes.
+  - No one glances up at me as I arrive, and I quickly take my seat and take out
+    my notebook.
+  - I can't seem to read the words on the whiteboard, though.
+  _playerReplyOptions: []
   _nextNodes:
-  - {fileID: 11400000, guid: 12cd68b71f535e347bbc25536743337a, type: 2}
+  - {fileID: 11400000, guid: 4fbb0cade1a869142a63a6ecb1a124d9, type: 2}

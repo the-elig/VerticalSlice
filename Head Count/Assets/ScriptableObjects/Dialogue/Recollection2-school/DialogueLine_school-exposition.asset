@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_school-exposition
+  m_EditorClassIdentifier: 
+  _speaker: You
+  _scene: 3
+  _recollection: {fileID: 0}
+  _lines:
+  - 'I''m at school. '
+  - It's dark and rainy and I'm late for class.
+  - 'I''d been to the school before, of course. I go everyday. '
+  - But I couldn't find the classroom.
+  _playerReplyOptions:
+  - I pull up my phone to look at a map.
+  - I ask a passerby for some help.
+  - I keep walking the way I think I'm meant to go.
+  _nextNodes:
+  - {fileID: 11400000, guid: a86c9a6fa378ddc43b149828ecd54a60, type: 2}
+  - {fileID: 11400000, guid: 659ae90260e8d0e40bcb35458fc3e212, type: 2}
+  - {fileID: 11400000, guid: 577acf5194401a343a63e36d632f7090, type: 2}

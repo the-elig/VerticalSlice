@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_sort
+  m_Name: DialogueLine_keepWalking
   m_EditorClassIdentifier: 
-  _speaker: Therapist
+  _speaker: You
   _scene: 0
-  _recollection: {fileID: 11400000, guid: 3c549d24b92441e43b5ad4500311a8a7, type: 2}
+  _recollection: {fileID: 0}
   _lines:
-  - Do you think it was real?
-  _playerReplyOptions:
-  - Memory.
-  - Dream.
+  - The path stretches on in front of me.
+  - My friend is as stressed as I am, but isn't quite sure of the way either.
+  _playerReplyOptions: []
   _nextNodes:
-  - {fileID: 11400000, guid: cde39f18ccc47674d9cbe4395e7ae3c0, type: 2}
-  - {fileID: 11400000, guid: f8f65616486182d43bb4f9827c9ed8d0, type: 2}
+  - {fileID: 11400000, guid: 67587246d6cd24f46916d99c32c73f92, type: 2}
