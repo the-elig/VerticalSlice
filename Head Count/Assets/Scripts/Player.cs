@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
         _recollections.Add(recollection._title + ": " + recollection._possibleDescriptions[selected]);
 
         string header =
-                _recollections[_recollections.Count - 1].Substring(0, _recollections[_recollections.Count - 1].IndexOf(": "));
+            _recollections[_recollections.Count - 1].Substring(0, _recollections[_recollections.Count - 1].IndexOf(": "));
         string description =
             _recollections[_recollections.Count - 1].Substring(_recollections[_recollections.Count - 1].IndexOf(": ") + 1);
 
@@ -110,12 +110,12 @@ public class Player : MonoBehaviour
             if ((_recollections.Count - 2) % 4 == 1 || (_recollections.Count - 2) % 4 == 2)
             {
                 // right leaf
-                currentPage.transform.GetChild(1).GetComponent<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+                currentPage.transform.GetChild(1).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
             }
             else
             {
                 // left leaf
-                currentPage.transform.GetChild(0).GetComponent<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+                currentPage.transform.GetChild(0).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
             }
         }
 
