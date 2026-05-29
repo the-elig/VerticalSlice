@@ -45,9 +45,26 @@ Since I already described my complicating factor in my W5 devlog, I will be desc
 
 
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+### General Notes
+- As of right now, my shader is only present on the clock in the therapist office scene so it is shown off. THowever, that is not its intended use case. Once I have more environments built, I plan to use it as a stylistic representation of obscured memories/dreams, and it will be applied to objects in a scene to make it more disconcerting. I do not have enough environments built for that yet.
+- Aside from the glitch shader, I also have a global volume and box volume in effect in order to add a vignette and a clinical coolness to the scene.
+
+### Devlog Question Answers
+<img width="1429" height="711" alt="milestone3-shader-graph" src="https://github.com/user-attachments/assets/ab5b838e-b1f2-4ca7-b80a-e525f69e2330" />
+
+1. At a macro level, my shader graph takes random vertex positions from a mesh and displaces them by a value between -0.5 and 0.5 on the x-axis in spurts (as dictated by a Sine Time Node with some additional modifications to make it less formulaic). It also changes the base color to magenta. More specifically, it first grabs the current position data of the mesh and isolates the x-value so that it can be modified. The y-value and z-value are left unchanged. Before we can generate a random value, however, we must first make it so that it is referring to only one "slice" of the mesh, rather than the mesh as a whole (which would result in the mesh doing the equivalent of a transform to the left or right). To do this, I used a Simple Noise Texture and plugged the original x-value into the UV while forcing the y-value to remain 0 (which makes the simple noise texture look like horizontal stripes). Then, we add the -0.5 to 0.5 value generated from the Random Range Node to our specific x-value, which displaces only a slice. But this only results in one change. To make it repeat, the random range is being triggered by a Time Node, which is further modified by a Sine Time Node in order to have the glitch effect occur is bursts, rather than constantly.
+   
+2. To make my dialogue UI more legible, I made the background darker and text larger (as suggested). Additionally, I added a box denoting who's speaking. I've also added a ceiling to the therapist's office-- since it was mentioned in every playtest.
+
+3. Since the last milestone, I've added an entirely new scene (dialogue wise) as well as two new environments. The new scene includes another recollection, which contributes to both the sanity feature and the journal. Additionally, I worked more on the aesthetics by using Volumes, both a global one that is used primarily for the therapist's office in order to make it seem more clinical, as well as a box volume that is used to differentiate the bedroom recollection. I've also added a skybox :D
+
+
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
+
+
+
+
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets
