@@ -8174,11 +8174,11 @@ PrefabInstance:
     - target: {fileID: 1800754495484772796, guid: 077eb31668b6a20409273c674a9ef4b7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f00ce01b6ec48f6488b2e9e9465f5a6f, type: 2}
+      objectReference: {fileID: 2100000, guid: 2ba36e9e10a45e94b8c7e6e23766d72a, type: 2}
     - target: {fileID: 1800754495484772796, guid: 077eb31668b6a20409273c674a9ef4b7, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: f00ce01b6ec48f6488b2e9e9465f5a6f, type: 2}
+      objectReference: {fileID: 2100000, guid: 12c479808d413ff43a05a827e95ab88a, type: 2}
     - target: {fileID: 3941467194656472606, guid: 077eb31668b6a20409273c674a9ef4b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2600002
