@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: aec307f630e1680429f0695e2ef9a722, type: 2}
+    - target: {fileID: -2754306038848128423, guid: 23eaa71a017c8e04990345dde81d13fb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aec307f630e1680429f0695e2ef9a722, type: 2}
     - target: {fileID: 919132149155446097, guid: 23eaa71a017c8e04990345dde81d13fb, type: 3}
       propertyPath: m_Name
       value: Therapist
