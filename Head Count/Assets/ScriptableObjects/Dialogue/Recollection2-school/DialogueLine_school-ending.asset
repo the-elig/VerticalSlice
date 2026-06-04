@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueLine_school-ending
   m_EditorClassIdentifier: 
   _speaker: You
-  _scene: 1
+  _scene: 0
   _recollection: {fileID: 0}
   _lines:
   - 'Eventually I make it into a classroom. '

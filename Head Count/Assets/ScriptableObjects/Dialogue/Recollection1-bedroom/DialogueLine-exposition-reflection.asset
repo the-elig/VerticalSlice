@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: You
   _scene: 0
-  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
-  - 'I''m not crying. '
+  - My gaze meets my own in the screen. Tired. Dead.
+  - I'm not crying.
   - I don't have the energy for it.
   _playerReplyOptions: []
   _nextNodes:

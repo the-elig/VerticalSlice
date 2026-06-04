@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: You
   _scene: 0
-  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
-  - 'My hands are shaking. '
+  - 'They''re trembling. '
+  - I try to still them. But I can't.
   _playerReplyOptions: []
   _nextNodes:
   - {fileID: 11400000, guid: 5c20533d12af0fb4d8d1ac08ba9d3811, type: 2}

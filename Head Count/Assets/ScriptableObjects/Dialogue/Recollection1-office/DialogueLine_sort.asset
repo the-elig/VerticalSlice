@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueLine_sort
   m_EditorClassIdentifier: 
   _speaker: Therapist
-  _scene: 0
+  _scene: 1
   _recollection: {fileID: 11400000, guid: 3c549d24b92441e43b5ad4500311a8a7, type: 2}
   _lines:
   - Do you think it was real?

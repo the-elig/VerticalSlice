@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueLine_school-sort
   m_EditorClassIdentifier: 
   _speaker: Therapist
-  _scene: 1
+  _scene: 4
   _recollection: {fileID: 11400000, guid: f0b47c58ed6959f46b888c133cb2165c, type: 2}
   _lines:
   - Do you think that was a dream of a memory?

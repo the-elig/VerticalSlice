@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: DialogueLine-exposition-ending
   m_EditorClassIdentifier: 
   _speaker: You
-  _scene: 1
-  _isFact: 0
+  _scene: 0
   _recollection: {fileID: 0}
   _lines:
   - I keep listening to music.
