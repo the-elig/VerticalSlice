@@ -87,7 +87,38 @@ public class Player : MonoBehaviour
             _recollections[_recollections.Count - 1].Substring(_recollections[_recollections.Count - 1].IndexOf(": ") + 1);
 
 
+        // if we've filled current page
+        if (_recollections.Count > _journalPages.Count * 2)
+        {
+            // instantiate new page
+            GameObject newPage = Instantiate(_journalPagePrefab, _parent.transform);
+            newPage.GetComponentInChildren<TMP_Text>().text = "";
+            numPages++;
 
+            // put header and description into journal
+            //newPage.GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+
+            // update UI Controller
+            _journalPages.Add(newPage);
+            Variables.Object(gameObject).Set("journalPages", _journalPages);
+            currentPage = newPage;
+            newPage.SetActive(false);
+        }
+
+
+        if (_recollections.Count % 2 == 0) //even numbers
+        {
+            // right leaf
+            currentPage.transform.GetChild(1).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+        }
+        else
+        {
+            // left leaf
+            currentPage.transform.GetChild(0).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
+        }
+
+
+        /*
         // if we've filled current page
         if (_recollections.Count > 4 && _recollections.Count % 4 == 1)
         {
@@ -118,6 +149,7 @@ public class Player : MonoBehaviour
                 currentPage.transform.GetChild(0).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
             }
         }
+        */
     }
 
 
