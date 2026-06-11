@@ -92,7 +92,8 @@ public class Player : MonoBehaviour
         {
             // instantiate new page
             GameObject newPage = Instantiate(_journalPagePrefab, _parent.transform);
-            newPage.GetComponentInChildren<TMP_Text>().text = "";
+           // newPage.GetComponentInChildren<TMP_Text>().text = "";
+            //newPage.transform.GetChild(1).GetComponentInChildren<TMP_Text>().text = "";
             numPages++;
 
             // put header and description into journal
