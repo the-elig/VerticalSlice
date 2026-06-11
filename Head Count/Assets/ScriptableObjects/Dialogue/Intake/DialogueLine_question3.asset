@@ -17,12 +17,12 @@ MonoBehaviour:
   _recollection: {fileID: 11400000, guid: d1de0bd15e598e1448ebc499beacd807, type: 2}
   _lines:
   - That's very mature of you.
-  - 'If you don''t mind me asking, what pronouns do you use? '
+  - Now, these last couple questions are ones I have to ask every patient. Your answer
+    won't affect anything right away, but it will be used to inform how your treatment
+    will continue going forward.
+  - Hopefully that makes sense.
+  - First, have you ever made, or acted on plans to hurt yourself?
   _playerReplyOptions:
-  - She/Her
-  - He/Him
-  - They/Them
+  - No.
   _nextNodes:
-  - {fileID: 11400000, guid: 9aadfb82176499847b40fe60d2d6c6a5, type: 2}
-  - {fileID: 11400000, guid: 9aadfb82176499847b40fe60d2d6c6a5, type: 2}
-  - {fileID: 11400000, guid: 9aadfb82176499847b40fe60d2d6c6a5, type: 2}
+  - {fileID: 11400000, guid: 66030f8ac5d649345b0219fd85bc41f8, type: 2}

@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_endIntake
+  m_Name: DialogueLine_question1-therapistlElaboration
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
   _recollection: {fileID: 0}
   _lines:
-  - Alright. That's the end of intake. Since you've mentioned your dreams, do you
-    wanna talk about some of your recollections for your first session?
-  _playerReplyOptions:
-  - I guess.
-  - Sure.
-  _nextNodes: []
+  - I know it's hard. But if I don't know what you're struggling with, I don't know
+    how to help.
+  _playerReplyOptions: []
+  _nextNodes:
+  - {fileID: 11400000, guid: 5a9eb121762d2124c90c2712cc17f4d7, type: 2}

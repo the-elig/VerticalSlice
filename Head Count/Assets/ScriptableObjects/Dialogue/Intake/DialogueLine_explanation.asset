@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
-  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
   - Of course!
   - 'Today is intake, so we''re gonna start with a couple questions so I can get
     to know you. '
-  - In your pre-appointment check-in you mentioned that you have some trouble knowing
-    what memories you have are real, and what are dreams.
-  - So this will set the scene for us both so when we take a closer look at your
-    recollections, we know what signs we can look for.
-  - If you forget anything you've said, you can always check your journal if you
-    need.
+  - 'This will also serve to get your starting sanity up. As we start discussing
+    things more, your answers will raise or lower your sanity depending on how close
+    they stray from the truth. '
+  - So, it's best if we remain honest with each other. I know it's hard. But holding
+    things back will only make it harder to figure things out later.
+  - And if you forget anything you've described to me, I'm keeping a journal you'll
+    always have access to, and you can check it to see what we've covered so far.
   - Does that make sense?
   _playerReplyOptions:
   - Yes, I think so.

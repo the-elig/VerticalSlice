@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
-  _isFact: 1
   _recollection: {fileID: 11400000, guid: 2d4d3745a2df0a44db2b02560924602c, type: 2}
   _lines:
-  - Wonderful.
-  - How would you describe your relationship with your parents?
+  - 'Alright. '
+  - 'Given your age, is it safe to assume it''s someone in your family? '
+  - Perhaps your parents? How would you describe your relationship with them?
   _playerReplyOptions:
   - Overall? Good.
   - It's not great.
-  - It's... complicated.
+  - Actually, it's more to do with my sister.
   _nextNodes:
   - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}
   - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}

@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_question1-brownElaboration
+  m_Name: DialogueLine_question1-pastElaboration
   m_EditorClassIdentifier: 
   _speaker: You
   _scene: 0
-  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
-  - Brown. Same as my dad's. Though my mom's are hazel.
+  - 'I''ve gone through a lot. '
+  - 'Somedays it hits me harder than others, but lately it''s been affecting my sleep,
+    too. '
+  - It's never nightmares, or anything. But it's unsettling, and having dreams that
+    so closely reflect reality is making me question what's actually real.
+  - The things are linked, obviously. I guess I just want help figuring it out.
   _playerReplyOptions: []
   _nextNodes:
   - {fileID: 11400000, guid: d82d9b324bedf0348acc5bffb0ce8ec4, type: 2}

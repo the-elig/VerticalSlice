@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_question2-elaboration2
+  m_EditorClassIdentifier: 
+  _speaker: You
+  _scene: 0
+  _recollection: {fileID: 0}
+  _lines:
+  - It's not entirely her fault, although sometimes it feels like it is.
+  - "She's adopted. And, of course, she's still my sister and that shouldn't change
+    anything about our relationship\u2014 I love her unconditionally."
+  - 'But it does mean that although my family has tried our best, her developmental
+    years were spent in an unsafe environment that has quite literally given her
+    brain damage. '
+  - 'And the trauma certainly doesn''t help. '
+  - It doesn't happen as much now, but she used to lash out dangerously. Spending
+    hours scream-crying and throwing things and hitting things and nothing you did
+    could help her.
+  - 'It was scary. '
+  - 'It still is. '
+  - Having different scream matches everyday multiple times a day in all parts of
+    the house certainly didn't do anything good for my mental health.
+  - Again, she's much better now. But it doesn't undo that damage.
+  _playerReplyOptions: []
+  _nextNodes:
+  - {fileID: 11400000, guid: e258a6f79c199f6488b0f7da41354b55, type: 2}

@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_question1-hazelElaboration
+  m_Name: DialogueLine_question5-elaboration
   m_EditorClassIdentifier: 
-  _speaker: You
+  _speaker: Therapist
   _scene: 0
-  _isFact: 0
-  _recollection: {fileID: 0}
+  _recollection: {fileID: 11400000, guid: d1de0bd15e598e1448ebc499beacd807, type: 2}
   _lines:
-  - Hazel. Though, my mom's are green and my dad's are brown.
+  - Generally, yes. But some people respond differently to different stimulus.
   _playerReplyOptions: []
   _nextNodes:
-  - {fileID: 11400000, guid: d82d9b324bedf0348acc5bffb0ce8ec4, type: 2}
+  - {fileID: 11400000, guid: 3b883f49fc5df764196e2d79bf4ad5c9, type: 2}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
+  m_Name: DialogueLine_question1-dreamsElaboration
+  m_EditorClassIdentifier: 
+  _speaker: You
+  _scene: 0
+  _recollection: {fileID: 0}
+  _lines:
+  - 'Lately, I''ve been having extremely vivid dreams. To be frank, half the time
+    I''m not sure if they''re just dreams or if they''re memories. '
+  - 'It''s been messing with my head, if I''m honest. '
+  - Even when I'm awake it feels like at any moment I might wake up. I've started
+    keepign track of the time and counting my fingers to check.
+  - I guess I just wanted someone I could talk it out with. So I could go through
+    some of my recollections and determine if they're real or not.
+  _playerReplyOptions: []
+  _nextNodes:
+  - {fileID: 11400000, guid: d82d9b324bedf0348acc5bffb0ce8ec4, type: 2}

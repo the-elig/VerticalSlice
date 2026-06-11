@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
-  _isFact: 1
   _recollection: {fileID: 11400000, guid: f30d3b5abbb913347bdd71347bea4be9, type: 2}
   _lines:
   - 'Wonderful. I''ll start with an easy question:'
-  - What color are your eyes?
+  - What brings you here today?
   _playerReplyOptions:
-  - Brown
-  - Blue
-  - Hazel
+  - My dreams...
+  - My past...
+  - ...
   _nextNodes:
-  - {fileID: 11400000, guid: d7d9603b5fc639941bd2f68687aa6d55, type: 2}
   - {fileID: 11400000, guid: 7824349ede3843040a13750220a365c0, type: 2}
+  - {fileID: 11400000, guid: d7d9603b5fc639941bd2f68687aa6d55, type: 2}
   - {fileID: 11400000, guid: bc7a087f7dcab1746a0ff859d3adcc99, type: 2}
