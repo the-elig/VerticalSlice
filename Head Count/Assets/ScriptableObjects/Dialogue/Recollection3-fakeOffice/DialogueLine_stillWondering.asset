@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine_question3
+  m_Name: DialogueLine_stillWondering
   m_EditorClassIdentifier: 
-  _speaker: Therapist
+  _speaker: You
   _scene: 0
-  _recollection: {fileID: 11400000, guid: d1de0bd15e598e1448ebc499beacd807, type: 2}
+  _recollection: {fileID: 11400000, guid: 393bf3c49efa27b49af9b963b0efbd15, type: 2}
   _lines:
-  - That's very mature of you.
-  - Have you ever made, or acted on plans to hurt yourself?
+  - It would be kind of crazy if I wondered if I was dreaming while I was in a dream.
+  - But...
   _playerReplyOptions:
-  - No.
+  - Investigate.
+  - Don't investigate.
   _nextNodes:
-  - {fileID: 11400000, guid: 66030f8ac5d649345b0219fd85bc41f8, type: 2}
+  - {fileID: 11400000, guid: 3b81bf680f75b1d4ba0bdb84f5a26721, type: 2}
+  - {fileID: 11400000, guid: 6a76ba2658a31504eaf277ebd5578b61, type: 2}

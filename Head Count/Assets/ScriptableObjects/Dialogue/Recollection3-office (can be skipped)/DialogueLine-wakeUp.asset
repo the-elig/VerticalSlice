@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine-school-disagree
+  m_Name: DialogueLine-wakeUp
   m_EditorClassIdentifier: 
   _speaker: Therapist
-  _scene: 0
+  _scene: 1
   _recollection: {fileID: 0}
   _lines:
-  - I can see that.
-  - "Now, would you like\u2014"
+  - I wake up.
   _playerReplyOptions: []
   _nextNodes:
-  - {fileID: 11400000, guid: 7151477ce5003104da6274dcc450fa08, type: 2}
+  - {fileID: 11400000, guid: a07b07644492f1a46ad419816386b944, type: 2}

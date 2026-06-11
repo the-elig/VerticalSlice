@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: You
   _scene: 2
-  _isFact: 0
   _recollection: {fileID: 0}
   _lines:
   - I'm sitting in my bedroom.
-  - I'm watching some video on my computer. Uh, I think it was the music video for
-    "My First Enemy" by Age of Madness
+  - I'm watching some video on my computer. I don't remember what it was.
   - My headphones are on full blast, but I can still hear the yelling outside my
     door.
   - Something's thrown down the hall. Or maybe down the stairs.

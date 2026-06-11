@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 579eb66038bb3954284ad438592184d6, type: 3}
-  m_Name: DialogueLine-school-disagree
+  m_Name: DialogueLine_denial
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
-  _recollection: {fileID: 0}
+  _recollection: {fileID: 11400000, guid: d1de0bd15e598e1448ebc499beacd807, type: 2}
   _lines:
-  - I can see that.
-  - "Now, would you like\u2014"
-  _playerReplyOptions: []
+  - 'Well, we were talking about your dream, which took place in a school. '
+  - Maybe that's it?
+  _playerReplyOptions:
+  - Maybe...
+  - I guess?
   _nextNodes:
-  - {fileID: 11400000, guid: 7151477ce5003104da6274dcc450fa08, type: 2}
+  - {fileID: 11400000, guid: ed0504f8db612c0418c55993ce206529, type: 2}
+  - {fileID: 11400000, guid: ed0504f8db612c0418c55993ce206529, type: 2}
