@@ -118,37 +118,14 @@ public class Player : MonoBehaviour
                 currentPage.transform.GetChild(0).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
             }
         }
-
-
-        if (recollection._isAlwaysCorrect)
-        {
-            modifySanity(recollection, 0);
-        }
-        else
-        {
-            modifySanity(recollection, selected);
-        }
     }
 
 
-    private void modifySanity(RecollectionNode recollection, int selected)
+    public void modifySanity(RecollectionNode recollection, int selected)
     {
-        int correctSorting = recollection._real ? 0: 1; // real = 0 because of indexing reasons
-
-        Debug.Log("correct sorting = " + correctSorting + ", selected = " + selected);
-
-        if (selected == correctSorting) 
-        {
-            _sanityMeter += recollection._sanityScore;
-        }
-        else
-        {
-            _sanityMeter -= recollection._sanityScore;
-        }
+        _sanityMeter += recollection._sanityChange[selected];
 
         Debug.Log(_sanityMeter);
-
-
     }
 
     

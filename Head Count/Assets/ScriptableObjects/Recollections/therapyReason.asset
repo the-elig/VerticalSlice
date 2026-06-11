@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdb764cfe490ddf4dbf71d42a4f76ce4, type: 3}
-  m_Name: eyeColor
+  m_Name: therapyReason
   m_EditorClassIdentifier: 
-  _title: Eye Color
+  _title: Therapy Reason
   _possibleDescriptions:
-  - Mine are brown, same as my dad. My mom's are hazel.
-  - Blue. Same as both my parents.
-  - My eyes are hazel. My mom's are green and by dad's are brown.
-  _sanityScore: 3
-  _isAlwaysCorrect: 1
-  _real: 1
+  - I've been having trouble keeping track of what's real. My dreams are too real.
+  - I've been through a lot, and because of that, and as a weird sort of processing
+    strategy, my brain is playing scenarios out in my dreams.
+  - 
+  _sanityChange: 0300000003000000fbffffff

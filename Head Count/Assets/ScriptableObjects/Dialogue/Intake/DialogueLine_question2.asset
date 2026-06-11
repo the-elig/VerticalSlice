@@ -17,8 +17,8 @@ MonoBehaviour:
   _recollection: {fileID: 11400000, guid: 2d4d3745a2df0a44db2b02560924602c, type: 2}
   _lines:
   - 'Alright. '
-  - 'Given your age, is it safe to assume it''s someone in your family? '
-  - Perhaps your parents? How would you describe your relationship with them?
+  - Can I ask about your family?
+  - How's your relationship with your parents?
   _playerReplyOptions:
   - Overall? Good.
   - It's not great.
@@ -26,4 +26,4 @@ MonoBehaviour:
   _nextNodes:
   - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}
   - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}
-  - {fileID: 11400000, guid: 57d515450e8cd9247b15648d25788563, type: 2}
+  - {fileID: 11400000, guid: 5a880e7b11ccebb40adfbe512088136f, type: 2}

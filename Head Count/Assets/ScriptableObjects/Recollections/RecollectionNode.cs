@@ -7,7 +7,5 @@ public class RecollectionNode : ScriptableObject
 
     public string[] _possibleDescriptions;
 
-    public int _sanityScore;
-    public bool _isAlwaysCorrect; //if always correct, add sanity
-    public bool _real;
+    public int[] _sanityChange; //positive = correct, negative = incorrect
 }

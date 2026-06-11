@@ -73,9 +73,16 @@ public class DialogueController : MonoBehaviour
 
     public void SelectedOption(int option)
     {
-        if (_currentNode._recollection != null) // if there is a recollection attached to the dialogue
+        if (_currentNode._recollection != null) 
         {
-            _player.addRecollection(_currentNode._recollection, option);
+            // if there is a recollection attached to the dialogue
+            _player.modifySanity(_currentNode._recollection, option);
+
+            if (_currentNode._recollection._possibleDescriptions[option] != "")
+            {
+                // and the selected option has a description
+                _player.addRecollection(_currentNode._recollection, option);
+            }
         }
         
 

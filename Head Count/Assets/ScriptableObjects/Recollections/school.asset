@@ -16,6 +16,4 @@ MonoBehaviour:
   _possibleDescriptions:
   - I couldn't find my classroom and I was late and my friend and I felt so helpless.
   - A dream centered around being unable to find my classroom.
-  _sanityScore: 5
-  _isAlwaysCorrect: 0
-  _real: 0
+  _sanityChange: fbffffff05000000

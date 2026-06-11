@@ -21,4 +21,6 @@ MonoBehaviour:
   _playerReplyOptions:
   - I guess.
   - Sure.
-  _nextNodes: []
+  _nextNodes:
+  - {fileID: 11400000, guid: 12cd68b71f535e347bbc25536743337a, type: 2}
+  - {fileID: 11400000, guid: 12cd68b71f535e347bbc25536743337a, type: 2}

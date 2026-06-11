@@ -17,6 +17,4 @@ MonoBehaviour:
   - There was fighting in the house. Things were thrown, sometimes. I zoned out in
     my room.
   - A dream where my parents fought.
-  _sanityScore: 5
-  _isAlwaysCorrect: 0
-  _real: 1
+  _sanityChange: 05000000fbffffff

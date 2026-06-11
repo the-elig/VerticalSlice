@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: Therapist
   _scene: 0
-  _recollection: {fileID: 11400000, guid: d1de0bd15e598e1448ebc499beacd807, type: 2}
+  _recollection: {fileID: 0}
   _lines:
   - Have you ever attempted suicide?
   _playerReplyOptions:
