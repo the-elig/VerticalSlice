@@ -43,13 +43,17 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        // don't let sanity go above 100
         if (_sanityMeter > 100)
         {
             _sanityMeter = 100;
         }
 
+        // update sanity text UI
         _sanityMeterText.text = _sanityMeter.ToString();
 
+
+        // start sanity effect/vignette if sanity is under 68
         if (_sanityMeter < 68)
         {
             _sanityEffect.SetFloat("_Intensity", 1);
@@ -59,6 +63,8 @@ public class Player : MonoBehaviour
             _sanityEffect.SetFloat("_Intensity", 0);
         }
 
+
+        // if sanity is under 60, game over
         if (_sanityMeter < 60)
         {
             playerLose();
@@ -99,12 +105,7 @@ public class Player : MonoBehaviour
         {
             // instantiate new page
             GameObject newPage = Instantiate(_journalPagePrefab, _parent.transform);
-           // newPage.GetComponentInChildren<TMP_Text>().text = "";
-            //newPage.transform.GetChild(1).GetComponentInChildren<TMP_Text>().text = "";
             numPages++;
-
-            // put header and description into journal
-            //newPage.GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
 
             // update UI Controller
             _journalPages.Add(newPage);
@@ -124,40 +125,6 @@ public class Player : MonoBehaviour
             // left leaf
             currentPage.transform.GetChild(0).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
         }
-
-
-        /*
-        // if we've filled current page
-        if (_recollections.Count > 4 && _recollections.Count % 4 == 1)
-        {
-            // instantiate new page
-            GameObject newPage = Instantiate(_journalPagePrefab, _parent.transform);
-            newPage.GetComponentInChildren<TMP_Text>().text = "";
-            numPages++;
-
-            // put header and description into journal
-            newPage.GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";            
-
-            // update UI Controller
-            _journalPages.Add(newPage);
-            Variables.Object(gameObject).Set("journalPages", _journalPages);
-            currentPage = newPage;
-            newPage.SetActive(false);
-        }
-        else // if we're continuing on the same page
-        {
-            if ((_recollections.Count - 2) % 4 == 1 || (_recollections.Count - 2) % 4 == 2)
-            {
-                // right leaf
-                currentPage.transform.GetChild(1).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
-            }
-            else
-            {
-                // left leaf
-                currentPage.transform.GetChild(0).GetComponentInChildren<TMP_Text>().text += $"<b>{header}</b>\n{description}\n\n";
-            }
-        }
-        */
     }
 
 
