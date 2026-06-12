@@ -8,12 +8,12 @@ using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
-    // fonts
+    [Header("Fonts")]
     [SerializeField] private TMP_FontAsset _georgia;
     [SerializeField] private TMP_FontAsset _studyNight;
 
 
-    // ui elements
+    [Header("UI Elements")]
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private TMP_Text _speakerName;
     [SerializeField] private TMP_Text _npcText;

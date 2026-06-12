@@ -174,13 +174,13 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -4207,7 +4207,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -5132,8 +5132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753bcc5fbc8f1e74ca2225ecef028bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sanityEffect: {fileID: 2100000, guid: c44f3d6e5671bf047bb934f930d9f971, type: 2}
   _sanityMeterText: {fileID: 225986396}
   _sanityMeter: 0
+  _loseScreen: {fileID: 2113365459}
   _parent: {fileID: 1795591822}
   _journalPagePrefab: {fileID: 4861754082294427041, guid: 58e5f1c950326674d93db31b2534ac59, type: 3}
   _recollections: []
@@ -5145,7 +5147,6 @@ MonoBehaviour:
   - {fileID: 672752434}
   - {fileID: 6935876}
   currentScene: 1
-  _loseScreen: {fileID: 2113365459}
 --- !u!114 &1138633585
 MonoBehaviour:
   m_ObjectHideFlags: 0

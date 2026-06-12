@@ -7,15 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    //[SerializeField] private TMP_Text _recollectionText;
-
-
-    //sanity stuff
+    [Header("Sanity Stuff")]
+    [SerializeField] Material _sanityEffect;
     [SerializeField] private TMP_Text _sanityMeterText;
-    public float _sanityMeter;
+    public int _sanityMeter;
 
+    // win/lose condition logic
+    [SerializeField] private GameObject _loseScreen;
 
-    //journal stuff
+    [Header("Journal Stuff")]
     [SerializeField] private GameObject _parent;
     [SerializeField] private GameObject _journalPagePrefab;
     private AotList _journalPages;
@@ -24,14 +24,13 @@ public class Player : MonoBehaviour
     public List<string> _recollections; // two per leaf, four per page
 
 
-    //scene switching
+    [Header("Scene Switching")]
     [SerializeField] private Camera _camera;
     [SerializeField] public Camera[] _cameraPositions; //puts camera in different scenes
     public int currentScene; //0 means no change, 1 is therapist's office
 
 
-    // win/lose condition logic
-    [SerializeField] private GameObject _loseScreen;
+    
 
     void Start()
     {
@@ -51,9 +50,16 @@ public class Player : MonoBehaviour
 
         _sanityMeterText.text = _sanityMeter.ToString();
 
+        if (_sanityMeter < 68)
+        {
+            _sanityEffect.SetFloat("_Intensity", 1);
+        }
+        else
+        {
+            _sanityEffect.SetFloat("_Intensity", 0);
+        }
 
-
-        if (_sanityMeter < 50) // 50 is arbitrary
+        if (_sanityMeter < 60)
         {
             playerLose();
         }
